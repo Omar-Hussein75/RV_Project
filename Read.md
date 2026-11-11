@@ -587,9 +587,9 @@ Screens:
                 Control: GroupContainer@1.5.0
                 Variant: ManualLayout
                 Properties:
-                  BorderColor: =If(varType="Status", ColorValue("#E60000"), ColorValue("#E3E3E3"))
-                  BorderThickness: =If(varType="Status", 2, 1)
-                  Fill: =If(varType="Status", ColorValue("#FFF3F0"), ColorValue("#FFFFFF"))
+                  BorderColor: =If(Coalesce(varStatus, false), ColorValue("#E60000"), ColorValue("#E3E3E3"))
+                  BorderThickness: =If(Coalesce(varStatus, false), 2, 1)
+                  Fill: =If(Coalesce(varStatus, false), ColorValue("#FFF3F0"), ColorValue("#FFFFFF"))
                   Height: =233
                   RadiusBottomLeft: =10
                   RadiusBottomRight: =10
@@ -621,7 +621,7 @@ Screens:
                               Color: =ColorValue("#FFFFFF")
                               Height: =40
                               Icon: =Icon.Person
-                              OnSelect: =Set(varType, "Status")
+                              OnSelect: =Select(btnStatusCard_1)
                               Width: =40
                               X: =26
                               Y: =26
@@ -633,7 +633,7 @@ Screens:
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
                         Height: =30
-                        OnSelect: =Set(varType, "Status")
+                        OnSelect: =Select(btnStatusCard_1)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
@@ -649,7 +649,7 @@ Screens:
                         Color: =ColorValue("#6B6B6B")
                         Font: =Font.'Segoe UI'
                         Height: =48
-                        OnSelect: =Set(varType, "Status")
+                        OnSelect: =Select(btnStatusCard_1)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
@@ -665,10 +665,10 @@ Screens:
                       Control: GroupContainer@1.5.0
                       Variant: ManualLayout
                       Properties:
-                        BorderColor: =If(varType="Status", ColorValue("#E60000"), ColorValue("#9E9E9E"))
+                        BorderColor: =If(Coalesce(varStatus, false), ColorValue("#E60000"), ColorValue("#9E9E9E"))
                         BorderThickness: =1
                         DropShadow: =DropShadow.None
-                        Fill: =If(varType="Status", ColorValue("#E60000"), ColorValue("#FFFFFF"))
+                        Fill: =If(Coalesce(varStatus, false), ColorValue("#E60000"), ColorValue("#FFFFFF"))
                         Height: =28
                         RadiusBottomLeft: =14
                         RadiusBottomRight: =14
@@ -684,7 +684,7 @@ Screens:
                               Color: =ColorValue("#FFFFFF")
                               Height: =15
                               Icon: =Icon.Check
-                              Visible: =varType="Status"
+                              Visible: =Coalesce(varStatus, false)
                               Width: =15
                               X: =6
                               Y: =6
@@ -713,9 +713,9 @@ Screens:
                 Control: GroupContainer@1.5.0
                 Variant: ManualLayout
                 Properties:
-                  BorderColor: =If(varType="Type", ColorValue("#E60000"), ColorValue("#E3E3E3"))
-                  BorderThickness: =If(varType="Type", 2, 1)
-                  Fill: =If(varType="Type", ColorValue("#FFF3F0"), ColorValue("#FFFFFF"))
+                  BorderColor: =If(Coalesce(varType, false), ColorValue("#E60000"), ColorValue("#E3E3E3"))
+                  BorderThickness: =If(Coalesce(varType, false), 2, 1)
+                  Fill: =If(Coalesce(varType, false), ColorValue("#FFF3F0"), ColorValue("#FFFFFF"))
                   Height: =233
                   RadiusBottomLeft: =10
                   RadiusBottomRight: =10
@@ -747,7 +747,7 @@ Screens:
                               Color: =ColorValue("#FFFFFF")
                               Height: =40
                               Icon: =Icon.Document
-                              OnSelect: =Set(varType, "Type")
+                              OnSelect: =Select(btnTypeCard_1)
                               Width: =40
                               X: =26
                               Y: =26
@@ -759,7 +759,7 @@ Screens:
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
                         Height: =30
-                        OnSelect: =Set(varType, "Type")
+                        OnSelect: =Select(btnTypeCard_1)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
@@ -775,7 +775,7 @@ Screens:
                         Color: =ColorValue("#6B6B6B")
                         Font: =Font.'Segoe UI'
                         Height: =48
-                        OnSelect: =Set(varType, "Type")
+                        OnSelect: =Select(btnTypeCard_1)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
@@ -791,10 +791,10 @@ Screens:
                       Control: GroupContainer@1.5.0
                       Variant: ManualLayout
                       Properties:
-                        BorderColor: =If(varType="Type", ColorValue("#E60000"), ColorValue("#9E9E9E"))
+                        BorderColor: =If(Coalesce(varType, false), ColorValue("#E60000"), ColorValue("#9E9E9E"))
                         BorderThickness: =1
                         DropShadow: =DropShadow.None
-                        Fill: =If(varType="Type", ColorValue("#E60000"), ColorValue("#FFFFFF"))
+                        Fill: =If(Coalesce(varType, false), ColorValue("#E60000"), ColorValue("#FFFFFF"))
                         Height: =28
                         RadiusBottomLeft: =14
                         RadiusBottomRight: =14
@@ -810,7 +810,7 @@ Screens:
                               Color: =ColorValue("#FFFFFF")
                               Height: =15
                               Icon: =Icon.Check
-                              Visible: =varType="Type"
+                              Visible: =Coalesce(varType, false)
                               Width: =15
                               X: =6
                               Y: =6
@@ -825,7 +825,7 @@ Screens:
                         OnSelect: |-
                           =Set(
                               varType,
-                              !Coalesce(varStatus,false)
+                              !Coalesce(varType,false)
                           );
                           If(
                               "Type" in colMismatchTypes.Value,
@@ -839,9 +839,9 @@ Screens:
                 Control: GroupContainer@1.5.0
                 Variant: ManualLayout
                 Properties:
-                  BorderColor: =If(varType="Existence", ColorValue("#E60000"), ColorValue("#E3E3E3"))
-                  BorderThickness: =If(varType="Existence", 2, 1)
-                  Fill: =If(varType="Existence", ColorValue("#FFF3F0"), ColorValue("#FFFFFF"))
+                  BorderColor: =If(Coalesce(varExistence, false), ColorValue("#E60000"), ColorValue("#E3E3E3"))
+                  BorderThickness: =If(Coalesce(varExistence, false), 2, 1)
+                  Fill: =If(Coalesce(varExistence, false), ColorValue("#FFF3F0"), ColorValue("#FFFFFF"))
                   Height: =233
                   RadiusBottomLeft: =10
                   RadiusBottomRight: =10
@@ -873,7 +873,7 @@ Screens:
                               Color: =ColorValue("#FFFFFF")
                               Height: =40
                               Icon: =Icon.Search
-                              OnSelect: =Set(varType, "Existence")
+                              OnSelect: =Select(btnExistenceCard_1)
                               Width: =40
                               X: =26
                               Y: =26
@@ -885,7 +885,7 @@ Screens:
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
                         Height: =30
-                        OnSelect: =Set(varType, "Existence")
+                        OnSelect: =Select(btnExistenceCard_1)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
@@ -901,7 +901,7 @@ Screens:
                         Color: =ColorValue("#6B6B6B")
                         Font: =Font.'Segoe UI'
                         Height: =48
-                        OnSelect: =Set(varType, "Existence")
+                        OnSelect: =Select(btnExistenceCard_1)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
@@ -917,10 +917,10 @@ Screens:
                       Control: GroupContainer@1.5.0
                       Variant: ManualLayout
                       Properties:
-                        BorderColor: =If(varType="Existence", ColorValue("#E60000"), ColorValue("#9E9E9E"))
+                        BorderColor: =If(Coalesce(varExistence, false), ColorValue("#E60000"), ColorValue("#9E9E9E"))
                         BorderThickness: =1
                         DropShadow: =DropShadow.None
-                        Fill: =If(varType="Existence", ColorValue("#E60000"), ColorValue("#FFFFFF"))
+                        Fill: =If(Coalesce(varExistence, false), ColorValue("#E60000"), ColorValue("#FFFFFF"))
                         Height: =28
                         RadiusBottomLeft: =14
                         RadiusBottomRight: =14
@@ -936,7 +936,7 @@ Screens:
                               Color: =ColorValue("#FFFFFF")
                               Height: =15
                               Icon: =Icon.Check
-                              Visible: =varType="Existence"
+                              Visible: =Coalesce(varExistence, false)
                               Width: =15
                               X: =6
                               Y: =6
@@ -951,7 +951,7 @@ Screens:
                         OnSelect: |-
                           =Set(
                               varExistence,
-                              !Coalesce(varStatus,false)
+                              !Coalesce(varExistence,false)
                           );
                           If(
                               "Existence" in colMismatchTypes.Value,
@@ -965,9 +965,9 @@ Screens:
                 Control: GroupContainer@1.5.0
                 Variant: ManualLayout
                 Properties:
-                  BorderColor: =If(varType="Rateplan", ColorValue("#E60000"), ColorValue("#E3E3E3"))
-                  BorderThickness: =If(varType="Rateplan", 2, 1)
-                  Fill: =If(varType="Rateplan", ColorValue("#FFF3F0"), ColorValue("#FFFFFF"))
+                  BorderColor: =If(Coalesce(varRatePlan, false), ColorValue("#E60000"), ColorValue("#E3E3E3"))
+                  BorderThickness: =If(Coalesce(varRatePlan, false), 2, 1)
+                  Fill: =If(Coalesce(varRatePlan, false), ColorValue("#FFF3F0"), ColorValue("#FFFFFF"))
                   Height: =233
                   RadiusBottomLeft: =10
                   RadiusBottomRight: =10
@@ -999,7 +999,7 @@ Screens:
                               Color: =ColorValue("#FFFFFF")
                               Height: =40
                               Icon: =Icon.Phone
-                              OnSelect: =Set(varType, "Rateplan")
+                              OnSelect: =Select(btnRateplanCard_1)
                               Width: =40
                               X: =26
                               Y: =26
@@ -1011,7 +1011,7 @@ Screens:
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
                         Height: =30
-                        OnSelect: =Set(varType, "Rateplan")
+                        OnSelect: =Select(btnRateplanCard_1)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
@@ -1027,7 +1027,7 @@ Screens:
                         Color: =ColorValue("#6B6B6B")
                         Font: =Font.'Segoe UI'
                         Height: =48
-                        OnSelect: =Set(varType, "Rateplan")
+                        OnSelect: =Select(btnRateplanCard_1)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
@@ -1043,10 +1043,10 @@ Screens:
                       Control: GroupContainer@1.5.0
                       Variant: ManualLayout
                       Properties:
-                        BorderColor: =If(varType="Rateplan", ColorValue("#E60000"), ColorValue("#9E9E9E"))
+                        BorderColor: =If(Coalesce(varRatePlan, false), ColorValue("#E60000"), ColorValue("#9E9E9E"))
                         BorderThickness: =1
                         DropShadow: =DropShadow.None
-                        Fill: =If(varType="Rateplan", ColorValue("#E60000"), ColorValue("#FFFFFF"))
+                        Fill: =If(Coalesce(varRatePlan, false), ColorValue("#E60000"), ColorValue("#FFFFFF"))
                         Height: =28
                         RadiusBottomLeft: =14
                         RadiusBottomRight: =14
@@ -1062,7 +1062,7 @@ Screens:
                               Color: =ColorValue("#FFFFFF")
                               Height: =15
                               Icon: =Icon.Check
-                              Visible: =varType="Rateplan"
+                              Visible: =Coalesce(varRatePlan, false)
                               Width: =15
                               X: =6
                               Y: =6
@@ -1088,9 +1088,9 @@ Screens:
                 Control: GroupContainer@1.5.0
                 Variant: ManualLayout
                 Properties:
-                  BorderColor: =If(varType="Services", ColorValue("#E60000"), ColorValue("#E3E3E3"))
-                  BorderThickness: =If(varType="Services", 2, 1)
-                  Fill: =If(varType="Services", ColorValue("#FFF3F0"), ColorValue("#FFFFFF"))
+                  BorderColor: =If(Coalesce(varServices, false), ColorValue("#E60000"), ColorValue("#E3E3E3"))
+                  BorderThickness: =If(Coalesce(varServices, false), 2, 1)
+                  Fill: =If(Coalesce(varServices, false), ColorValue("#FFF3F0"), ColorValue("#FFFFFF"))
                   Height: =233
                   RadiusBottomLeft: =10
                   RadiusBottomRight: =10
@@ -1122,7 +1122,7 @@ Screens:
                               Color: =ColorValue("#FFFFFF")
                               Height: =40
                               Icon: =Icon.Waffle
-                              OnSelect: =Set(varType, "Services")
+                              OnSelect: =Select(btnServicesCard_1)
                               Width: =40
                               X: =26
                               Y: =26
@@ -1134,7 +1134,7 @@ Screens:
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
                         Height: =30
-                        OnSelect: =Set(varType, "Services")
+                        OnSelect: =Select(btnServicesCard_1)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
@@ -1150,7 +1150,7 @@ Screens:
                         Color: =ColorValue("#6B6B6B")
                         Font: =Font.'Segoe UI'
                         Height: =48
-                        OnSelect: =Set(varType, "Services")
+                        OnSelect: =Select(btnServicesCard_1)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
@@ -1166,10 +1166,10 @@ Screens:
                       Control: GroupContainer@1.5.0
                       Variant: ManualLayout
                       Properties:
-                        BorderColor: =If(varType="Services", ColorValue("#E60000"), ColorValue("#9E9E9E"))
+                        BorderColor: =If(Coalesce(varServices, false), ColorValue("#E60000"), ColorValue("#9E9E9E"))
                         BorderThickness: =1
                         DropShadow: =DropShadow.None
-                        Fill: =If(varType="Services", ColorValue("#E60000"), ColorValue("#FFFFFF"))
+                        Fill: =If(Coalesce(varServices, false), ColorValue("#E60000"), ColorValue("#FFFFFF"))
                         Height: =28
                         RadiusBottomLeft: =14
                         RadiusBottomRight: =14
@@ -1185,7 +1185,7 @@ Screens:
                               Color: =ColorValue("#FFFFFF")
                               Height: =15
                               Icon: =Icon.Check
-                              Visible: =varType="Services"
+                              Visible: =Coalesce(varServices, false)
                               Width: =15
                               X: =6
                               Y: =6
