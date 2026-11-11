@@ -7,10 +7,6 @@
       Width: =Parent.Width
       Height: =Parent.Height
       Fill: =ColorValue("#F4F4F4")
-      RadiusTopLeft: =0
-      RadiusTopRight: =0
-      RadiusBottomLeft: =0
-      RadiusBottomRight: =0
       BorderColor: =Color.Transparent
       BorderThickness: =0
       DropShadow: =DropShadow.None
@@ -24,10 +20,6 @@
             Width: =1324
             Height: =74
             Fill: =ColorValue("#16171C")
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
             BorderColor: =Color.Transparent
             BorderThickness: =0
             DropShadow: =DropShadow.None
@@ -109,10 +101,6 @@
                   Width: =251
                   Height: =40
                   Fill: =ColorValue("#26272C")
-                  RadiusTopLeft: =20
-                  RadiusTopRight: =20
-                  RadiusBottomLeft: =20
-                  RadiusBottomRight: =20
                   BorderColor: =ColorValue("#55565B")
                   BorderThickness: =1
                   DropShadow: =DropShadow.None
@@ -126,10 +114,6 @@
                         Width: =18
                         Height: =18
                         Fill: =ColorValue("#3DBE5A")
-                        RadiusTopLeft: =9
-                        RadiusTopRight: =9
-                        RadiusBottomLeft: =9
-                        RadiusBottomRight: =9
                         BorderColor: =Color.Transparent
                         BorderThickness: =0
                         DropShadow: =DropShadow.None
@@ -176,10 +160,6 @@
                   Width: =43
                   Height: =43
                   Fill: =ColorValue("#D9D9D9")
-                  RadiusTopLeft: =21
-                  RadiusTopRight: =21
-                  RadiusBottomLeft: =21
-                  RadiusBottomRight: =21
                   BorderColor: =Color.Transparent
                   BorderThickness: =0
                   DropShadow: =DropShadow.None
@@ -289,10 +269,6 @@
             Width: =900
             Height: =560
             Fill: =ColorValue("#FFFFFF")
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
             BorderColor: =ColorValue("#E3E3E3")
             BorderThickness: =1
             DropShadow: =DropShadow.Light
@@ -609,10 +585,6 @@
             Width: =Parent.Width
             Height: =Parent.Height
             Fill: =RGBA(0,0,0,0.45)
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
             BorderColor: =Color.Transparent
             BorderThickness: =0
             DropShadow: =DropShadow.None
@@ -627,10 +599,6 @@
                   Width: =560
                   Height: =320
                   Fill: =ColorValue("#FFFFFF")
-                  RadiusTopLeft: =12
-                  RadiusTopRight: =12
-                  RadiusBottomLeft: =12
-                  RadiusBottomRight: =12
                   BorderColor: =ColorValue("#E3E3E3")
                   BorderThickness: =1
                   DropShadow: =DropShadow.Light
