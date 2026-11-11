@@ -7,10 +7,6 @@
       Width: =Parent.Width
       Height: =Parent.Height
       Fill: =ColorValue("#F4F4F4")
-      RadiusTopLeft: =0
-      RadiusTopRight: =0
-      RadiusBottomLeft: =0
-      RadiusBottomRight: =0
       BorderColor: =Color.Transparent
       BorderThickness: =0
       DropShadow: =DropShadow.None
@@ -24,10 +20,6 @@
             Width: =1324
             Height: =74
             Fill: =ColorValue("#16171C")
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
             BorderColor: =Color.Transparent
             BorderThickness: =0
             DropShadow: =DropShadow.None
@@ -109,10 +101,6 @@
                   Width: =251
                   Height: =40
                   Fill: =ColorValue("#26272C")
-                  RadiusTopLeft: =20
-                  RadiusTopRight: =20
-                  RadiusBottomLeft: =20
-                  RadiusBottomRight: =20
                   BorderColor: =ColorValue("#55565B")
                   BorderThickness: =1
                   DropShadow: =DropShadow.None
@@ -126,10 +114,6 @@
                         Width: =18
                         Height: =18
                         Fill: =ColorValue("#3DBE5A")
-                        RadiusTopLeft: =9
-                        RadiusTopRight: =9
-                        RadiusBottomLeft: =9
-                        RadiusBottomRight: =9
                         BorderColor: =Color.Transparent
                         BorderThickness: =0
                         DropShadow: =DropShadow.None
@@ -176,10 +160,6 @@
                   Width: =43
                   Height: =43
                   Fill: =ColorValue("#D9D9D9")
-                  RadiusTopLeft: =21
-                  RadiusTopRight: =21
-                  RadiusBottomLeft: =21
-                  RadiusBottomRight: =21
                   BorderColor: =Color.Transparent
                   BorderThickness: =0
                   DropShadow: =DropShadow.None
@@ -289,10 +269,6 @@
             Width: =88
             Height: =88
             Fill: =ColorValue("#EB3C1E")
-            RadiusTopLeft: =44
-            RadiusTopRight: =44
-            RadiusBottomLeft: =44
-            RadiusBottomRight: =44
             BorderColor: =Color.Transparent
             BorderThickness: =0
             DropShadow: =DropShadow.None
@@ -369,10 +345,6 @@
             Width: =88
             Height: =88
             Fill: =ColorValue("#EB3C1E")
-            RadiusTopLeft: =44
-            RadiusTopRight: =44
-            RadiusBottomLeft: =44
-            RadiusBottomRight: =44
             BorderColor: =Color.Transparent
             BorderThickness: =0
             DropShadow: =DropShadow.None
@@ -449,10 +421,6 @@
             Width: =88
             Height: =88
             Fill: =ColorValue("#EB3C1E")
-            RadiusTopLeft: =44
-            RadiusTopRight: =44
-            RadiusBottomLeft: =44
-            RadiusBottomRight: =44
             BorderColor: =Color.Transparent
             BorderThickness: =0
             DropShadow: =DropShadow.None
@@ -529,10 +497,6 @@
             Width: =88
             Height: =88
             Fill: =ColorValue("#EB3C1E")
-            RadiusTopLeft: =44
-            RadiusTopRight: =44
-            RadiusBottomLeft: =44
-            RadiusBottomRight: =44
             BorderColor: =Color.Transparent
             BorderThickness: =0
             DropShadow: =DropShadow.None
@@ -633,10 +597,6 @@
             Width: =275
             Height: =233
             Fill: =If(varType="Status", ColorValue("#FFF3F0"), ColorValue("#FFFFFF"))
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
             BorderColor: =If(varType="Status", ColorValue("#E60000"), ColorValue("#E3E3E3"))
             BorderThickness: =If(varType="Status", 2, 1)
             DropShadow: =DropShadow.Light
@@ -650,10 +610,6 @@
                   Width: =93
                   Height: =93
                   Fill: =ColorValue("#EB3C1E")
-                  RadiusTopLeft: =47
-                  RadiusTopRight: =47
-                  RadiusBottomLeft: =47
-                  RadiusBottomRight: =47
                   BorderColor: =Color.Transparent
                   BorderThickness: =0
                   DropShadow: =DropShadow.None
@@ -717,10 +673,6 @@
                   Width: =28
                   Height: =28
                   Fill: =If(varType="Status", ColorValue("#E60000"), ColorValue("#FFFFFF"))
-                  RadiusTopLeft: =14
-                  RadiusTopRight: =14
-                  RadiusBottomLeft: =14
-                  RadiusBottomRight: =14
                   BorderColor: =If(varType="Status", ColorValue("#E60000"), ColorValue("#9E9E9E"))
                   BorderThickness: =1
                   DropShadow: =DropShadow.None
@@ -758,10 +710,6 @@
             Width: =275
             Height: =233
             Fill: =If(varType="Type", ColorValue("#FFF3F0"), ColorValue("#FFFFFF"))
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
             BorderColor: =If(varType="Type", ColorValue("#E60000"), ColorValue("#E3E3E3"))
             BorderThickness: =If(varType="Type", 2, 1)
             DropShadow: =DropShadow.Light
@@ -775,10 +723,6 @@
                   Width: =93
                   Height: =93
                   Fill: =ColorValue("#EB3C1E")
-                  RadiusTopLeft: =47
-                  RadiusTopRight: =47
-                  RadiusBottomLeft: =47
-                  RadiusBottomRight: =47
                   BorderColor: =Color.Transparent
                   BorderThickness: =0
                   DropShadow: =DropShadow.None
@@ -842,10 +786,6 @@
                   Width: =28
                   Height: =28
                   Fill: =If(varType="Type", ColorValue("#E60000"), ColorValue("#FFFFFF"))
-                  RadiusTopLeft: =14
-                  RadiusTopRight: =14
-                  RadiusBottomLeft: =14
-                  RadiusBottomRight: =14
                   BorderColor: =If(varType="Type", ColorValue("#E60000"), ColorValue("#9E9E9E"))
                   BorderThickness: =1
                   DropShadow: =DropShadow.None
@@ -883,10 +823,6 @@
             Width: =275
             Height: =233
             Fill: =If(varType="Existence", ColorValue("#FFF3F0"), ColorValue("#FFFFFF"))
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
             BorderColor: =If(varType="Existence", ColorValue("#E60000"), ColorValue("#E3E3E3"))
             BorderThickness: =If(varType="Existence", 2, 1)
             DropShadow: =DropShadow.Light
@@ -900,10 +836,6 @@
                   Width: =93
                   Height: =93
                   Fill: =ColorValue("#EB3C1E")
-                  RadiusTopLeft: =47
-                  RadiusTopRight: =47
-                  RadiusBottomLeft: =47
-                  RadiusBottomRight: =47
                   BorderColor: =Color.Transparent
                   BorderThickness: =0
                   DropShadow: =DropShadow.None
@@ -967,10 +899,6 @@
                   Width: =28
                   Height: =28
                   Fill: =If(varType="Existence", ColorValue("#E60000"), ColorValue("#FFFFFF"))
-                  RadiusTopLeft: =14
-                  RadiusTopRight: =14
-                  RadiusBottomLeft: =14
-                  RadiusBottomRight: =14
                   BorderColor: =If(varType="Existence", ColorValue("#E60000"), ColorValue("#9E9E9E"))
                   BorderThickness: =1
                   DropShadow: =DropShadow.None
@@ -1008,10 +936,6 @@
             Width: =275
             Height: =233
             Fill: =If(varType="Rateplan", ColorValue("#FFF3F0"), ColorValue("#FFFFFF"))
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
             BorderColor: =If(varType="Rateplan", ColorValue("#E60000"), ColorValue("#E3E3E3"))
             BorderThickness: =If(varType="Rateplan", 2, 1)
             DropShadow: =DropShadow.Light
@@ -1025,10 +949,6 @@
                   Width: =93
                   Height: =93
                   Fill: =ColorValue("#EB3C1E")
-                  RadiusTopLeft: =47
-                  RadiusTopRight: =47
-                  RadiusBottomLeft: =47
-                  RadiusBottomRight: =47
                   BorderColor: =Color.Transparent
                   BorderThickness: =0
                   DropShadow: =DropShadow.None
@@ -1092,10 +1012,6 @@
                   Width: =28
                   Height: =28
                   Fill: =If(varType="Rateplan", ColorValue("#E60000"), ColorValue("#FFFFFF"))
-                  RadiusTopLeft: =14
-                  RadiusTopRight: =14
-                  RadiusBottomLeft: =14
-                  RadiusBottomRight: =14
                   BorderColor: =If(varType="Rateplan", ColorValue("#E60000"), ColorValue("#9E9E9E"))
                   BorderThickness: =1
                   DropShadow: =DropShadow.None
@@ -1133,10 +1049,6 @@
             Width: =275
             Height: =233
             Fill: =If(varType="Services", ColorValue("#FFF3F0"), ColorValue("#FFFFFF"))
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
             BorderColor: =If(varType="Services", ColorValue("#E60000"), ColorValue("#E3E3E3"))
             BorderThickness: =If(varType="Services", 2, 1)
             DropShadow: =DropShadow.Light
@@ -1150,10 +1062,6 @@
                   Width: =93
                   Height: =93
                   Fill: =ColorValue("#EB3C1E")
-                  RadiusTopLeft: =47
-                  RadiusTopRight: =47
-                  RadiusBottomLeft: =47
-                  RadiusBottomRight: =47
                   BorderColor: =Color.Transparent
                   BorderThickness: =0
                   DropShadow: =DropShadow.None
@@ -1217,10 +1125,6 @@
                   Width: =28
                   Height: =28
                   Fill: =If(varType="Services", ColorValue("#E60000"), ColorValue("#FFFFFF"))
-                  RadiusTopLeft: =14
-                  RadiusTopRight: =14
-                  RadiusBottomLeft: =14
-                  RadiusBottomRight: =14
                   BorderColor: =If(varType="Services", ColorValue("#E60000"), ColorValue("#9E9E9E"))
                   BorderThickness: =1
                   DropShadow: =DropShadow.None
@@ -1258,10 +1162,6 @@
             Width: =1453
             Height: =172
             Fill: =ColorValue("#FFFFFF")
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
             BorderColor: =ColorValue("#E3E3E3")
             BorderThickness: =1
             DropShadow: =DropShadow.Light
@@ -1392,10 +1292,6 @@
                   IconBackground: =Color.Transparent
                   Font: =Font.'Segoe UI'
                   PaddingLeft: =18
-                  RadiusTopLeft: =6
-                  RadiusTopRight: =6
-                  RadiusBottomLeft: =6
-                  RadiusBottomRight: =6
             - btnRunCheck:
                 Control: Classic/Button
                 Properties:
@@ -1442,10 +1338,6 @@
             Width: =1453
             Height: =145
             Fill: =ColorValue("#FFFFFF")
-            RadiusTopLeft: =10
-            RadiusTopRight: =10
-            RadiusBottomLeft: =10
-            RadiusBottomRight: =10
             BorderColor: =ColorValue("#E3E3E3")
             BorderThickness: =1
             DropShadow: =DropShadow.Light
@@ -1467,10 +1359,6 @@
                   Width: =35
                   Height: =35
                   Fill: =ColorValue("#1E1E1E")
-                  RadiusTopLeft: =18
-                  RadiusTopRight: =18
-                  RadiusBottomLeft: =18
-                  RadiusBottomRight: =18
                   BorderColor: =Color.Transparent
                   BorderThickness: =0
                   DropShadow: =DropShadow.None
