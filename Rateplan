@@ -1,0 +1,727 @@
+- conPageP:
+    Control: GroupContainer
+    Variant: ManualLayout
+    Properties:
+      X: =0
+      Y: =0
+      Width: =Parent.Width
+      Height: =Parent.Height
+      Fill: =ColorValue("#F4F4F4")
+      RadiusTopLeft: =0
+      RadiusTopRight: =0
+      RadiusBottomLeft: =0
+      RadiusBottomRight: =0
+      BorderColor: =Color.Transparent
+      BorderThickness: =0
+      DropShadow: =DropShadow.None
+    Children:
+      - conHeaderP:
+          Control: GroupContainer
+          Variant: ManualLayout
+          Properties:
+            X: =0
+            Y: =0
+            Width: =1324
+            Height: =74
+            Fill: =ColorValue("#16171C")
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            BorderColor: =Color.Transparent
+            BorderThickness: =0
+            DropShadow: =DropShadow.None
+          Children:
+            - imgLogoP:
+                Control: Image
+                Properties:
+                  X: =30
+                  Y: =11
+                  Width: =36
+                  Height: =36
+                  Image: =imgLogo.Image
+                  ImagePosition: =ImagePosition.Fit
+            - lblBrandP:
+                Control: Label
+                Properties:
+                  Text: ="vodafone"
+                  X: =92
+                  Y: =18
+                  Width: =151
+                  Height: =38
+                  Size: =18
+                  Color: =ColorValue("#FFFFFF")
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Normal
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  PaddingBottom: =0
+                  VerticalAlign: =VerticalAlign.Middle
+            - rctHdrDividerP:
+                Control: Rectangle
+                Properties:
+                  X: =253
+                  Y: =15
+                  Width: =2
+                  Height: =45
+                  Fill: =ColorValue("#9A9A9A")
+            - lblToolNameP:
+                Control: Label
+                Properties:
+                  Text: ="Mismatch Tool"
+                  X: =285
+                  Y: =13
+                  Width: =328
+                  Height: =28
+                  Size: =15
+                  Color: =ColorValue("#FFFFFF")
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Semibold
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  PaddingBottom: =0
+                  VerticalAlign: =VerticalAlign.Middle
+            - lblToolSubP:
+                Control: Label
+                Properties:
+                  Text: ="Automated Revenue Assurance Validation"
+                  X: =285
+                  Y: =40
+                  Width: =378
+                  Height: =20
+                  Size: =9
+                  Color: =ColorValue("#FFFFFF")
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Normal
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  PaddingBottom: =0
+                  VerticalAlign: =VerticalAlign.Middle
+            - conStatusP:
+                Control: GroupContainer
+                Variant: ManualLayout
+                Properties:
+                  X: =926
+                  Y: =18
+                  Width: =251
+                  Height: =40
+                  Fill: =ColorValue("#26272C")
+                  RadiusTopLeft: =20
+                  RadiusTopRight: =20
+                  RadiusBottomLeft: =20
+                  RadiusBottomRight: =20
+                  BorderColor: =ColorValue("#55565B")
+                  BorderThickness: =1
+                  DropShadow: =DropShadow.None
+                Children:
+                  - conDotP:
+                      Control: GroupContainer
+                      Variant: ManualLayout
+                      Properties:
+                        X: =19
+                        Y: =11
+                        Width: =18
+                        Height: =18
+                        Fill: =ColorValue("#3DBE5A")
+                        RadiusTopLeft: =9
+                        RadiusTopRight: =9
+                        RadiusBottomLeft: =9
+                        RadiusBottomRight: =9
+                        BorderColor: =Color.Transparent
+                        BorderThickness: =0
+                        DropShadow: =DropShadow.None
+                  - lblStatusP:
+                      Control: Label
+                      Properties:
+                        Text: ="System Status:"
+                        X: =53
+                        Y: =5
+                        Width: =132
+                        Height: =30
+                        Size: =10
+                        Color: =ColorValue("#FFFFFF")
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PaddingBottom: =0
+                        VerticalAlign: =VerticalAlign.Middle
+                  - lblStatusValP:
+                      Control: Label
+                      Properties:
+                        Text: ="Active"
+                        X: =183
+                        Y: =5
+                        Width: =63
+                        Height: =30
+                        Size: =10
+                        Color: =ColorValue("#3DBE5A")
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PaddingBottom: =0
+                        VerticalAlign: =VerticalAlign.Middle
+            - conUserP:
+                Control: GroupContainer
+                Variant: ManualLayout
+                Properties:
+                  X: =1218
+                  Y: =16
+                  Width: =43
+                  Height: =43
+                  Fill: =ColorValue("#D9D9D9")
+                  RadiusTopLeft: =21
+                  RadiusTopRight: =21
+                  RadiusBottomLeft: =21
+                  RadiusBottomRight: =21
+                  BorderColor: =Color.Transparent
+                  BorderThickness: =0
+                  DropShadow: =DropShadow.None
+                Children:
+                  - icoUserP:
+                      Control: Classic/Icon
+                      Properties:
+                        Icon: =Icon.Person
+                        X: =9
+                        Y: =9
+                        Width: =25
+                        Height: =25
+                        Color: =ColorValue("#3A3A3A")
+      - lblTaglineP:
+          Control: Label
+          Properties:
+            Text: |-
+              ="Together
+              we keep
+              Egypt connected"
+            X: =1349
+            Y: =30
+            Width: =164
+            Height: =73
+            Size: =10
+            Color: =ColorValue("#1E1E1E")
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Normal
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            VerticalAlign: =VerticalAlign.Middle
+      - rctTagLineP:
+          Control: Rectangle
+          Properties:
+            X: =1351
+            Y: =111
+            Width: =48
+            Height: =4
+            Fill: =ColorValue("#E60000")
+      - lblTitleRedP:
+          Control: Label
+          Properties:
+            Text: ="Rateplan"
+            X: =48
+            Y: =112
+            Width: =300
+            Height: =60
+            Size: =34
+            Color: =ColorValue("#E60000")
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            VerticalAlign: =VerticalAlign.Middle
+      - lblTitleDarkP:
+          Control: Label
+          Properties:
+            Text: ="Mismatch"
+            X: =268
+            Y: =112
+            Width: =320
+            Height: =60
+            Size: =34
+            Color: =ColorValue("#1E1E1E")
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            VerticalAlign: =VerticalAlign.Middle
+      - lblHeroSubP:
+          Control: Label
+          Properties:
+            Text: ="Export the rateplan mismatch results to your email"
+            X: =49
+            Y: =172
+            Width: =700
+            Height: =24
+            Size: =11
+            Color: =ColorValue("#3A3A3A")
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Normal
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            VerticalAlign: =VerticalAlign.Middle
+      - rctHeroLineP:
+          Control: Rectangle
+          Properties:
+            X: =49
+            Y: =206
+            Width: =70
+            Height: =4
+            Fill: =ColorValue("#E60000")
+      - conRpCard:
+          Control: GroupContainer
+          Variant: ManualLayout
+          Properties:
+            X: =318
+            Y: =240
+            Width: =900
+            Height: =560
+            Fill: =ColorValue("#FFFFFF")
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            BorderColor: =ColorValue("#E3E3E3")
+            BorderThickness: =1
+            DropShadow: =DropShadow.Light
+          Children:
+            - btnRpIcoBg:
+                Control: Classic/Button
+                Properties:
+                  X: =395
+                  Y: =40
+                  Width: =110
+                  Height: =110
+                  Text: =""
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Semibold
+                  Size: =10
+                  FocusedBorderThickness: =0
+                  OnSelect: =false
+                  RadiusTopLeft: =55
+                  RadiusTopRight: =55
+                  RadiusBottomLeft: =55
+                  RadiusBottomRight: =55
+                  Fill: =ColorValue("#EB3C1E")
+                  HoverFill: =ColorValue("#EB3C1E")
+                  PressedFill: =ColorValue("#EB3C1E")
+                  Color: =ColorValue("#FFFFFF")
+                  BorderThickness: =0
+                  DisplayMode: =DisplayMode.View
+            - icoRpPhone:
+                Control: Classic/Icon
+                Properties:
+                  Icon: =Icon.Phone
+                  X: =422
+                  Y: =67
+                  Width: =56
+                  Height: =56
+                  Color: =ColorValue("#FFFFFF")
+            - lblRpHead:
+                Control: Label
+                Properties:
+                  Text: ="Rateplan Mismatch Report"
+                  X: =0
+                  Y: =170
+                  Width: =900
+                  Height: =40
+                  Size: =20
+                  Color: =ColorValue("#1E1E1E")
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Semibold
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  PaddingBottom: =0
+                  VerticalAlign: =VerticalAlign.Middle
+                  Align: =Align.Center
+            - lblRpSub:
+                Control: Label
+                Properties:
+                  Text: |-
+                    ="Run date: " & Text(varDate, "dd mmm yyyy") & "   ·   MSISDN: " & If(IsBlank(varMSISDNs), "All", varMSISDNs)
+                  X: =40
+                  Y: =212
+                  Width: =820
+                  Height: =24
+                  Size: =11
+                  Color: =ColorValue("#6B6B6B")
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Normal
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  PaddingBottom: =0
+                  VerticalAlign: =VerticalAlign.Middle
+                  Align: =Align.Center
+            - rctRpDiv:
+                Control: Rectangle
+                Properties:
+                  X: =415
+                  Y: =250
+                  Width: =70
+                  Height: =3
+                  Fill: =ColorValue("#E60000")
+            - lblRpCount:
+                Control: Label
+                Properties:
+                  Text: =Text(CountRows(colBase), "#,##0")
+                  X: =0
+                  Y: =272
+                  Width: =900
+                  Height: =70
+                  Size: =44
+                  Color: =ColorValue("#E60000")
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Semibold
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  PaddingBottom: =0
+                  VerticalAlign: =VerticalAlign.Middle
+                  Align: =Align.Center
+            - lblRpCountCap:
+                Control: Label
+                Properties:
+                  Text: ="RATEPLAN MISMATCHES FOUND"
+                  X: =0
+                  Y: =340
+                  Width: =900
+                  Height: =22
+                  Size: =10
+                  Color: =ColorValue("#6B6B6B")
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Semibold
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  PaddingBottom: =0
+                  VerticalAlign: =VerticalAlign.Middle
+                  Align: =Align.Center
+            - lblRpNote:
+                Control: Label
+                Properties:
+                  Text: ="Includes Converged, Postpaid and Control subscribers."
+                  X: =0
+                  Y: =372
+                  Width: =900
+                  Height: =22
+                  Size: =10
+                  Color: =ColorValue("#3A3A3A")
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Normal
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  PaddingBottom: =0
+                  VerticalAlign: =VerticalAlign.Middle
+                  Align: =Align.Center
+            - btnExportRp:
+                Control: Classic/Button
+                Properties:
+                  X: =280
+                  Y: =420
+                  Width: =340
+                  Height: =60
+                  Text: =If(varSending, "Sending…", "✉   Export Results")
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Semibold
+                  Size: =16
+                  FocusedBorderThickness: =0
+                  OnSelect: |-
+                    =Set(varSending, true);
+                    IfError(
+                        Office365Outlook.SendEmailV2(
+                            User().Email,
+                            "Rateplan Mismatch Results - " & Text(varDate, "dd mmm yyyy"),
+                            "Please find attached the rateplan mismatch results (" & CountRows(colBase) & " records).",
+                            {
+                                Attachments: Table({
+                                    Name: "Rateplan_Mismatch_" & Text(varDate, "yyyymmdd") & ".csv",
+                                    ContentBytes:
+                                        "MSISDN,Billing,Charging,HLR,Siebel,RunDate" & Char(10) &
+                                        Concat(colBase,
+                                            MSISDN & "," & Billing & "," & Charging & "," & HLR & "," & Siebel & "," &
+                                            Text(RunDate, "yyyy-mm-dd"), Char(10))
+                                })
+                            }
+                        );
+                        Set(varShowMsg, true),
+                        Notify("Could not send the email: " & FirstError.Message, NotificationType.Error)
+                    );
+                    Set(varSending, false)
+                  RadiusTopLeft: =6
+                  RadiusTopRight: =6
+                  RadiusBottomLeft: =6
+                  RadiusBottomRight: =6
+                  Fill: =ColorValue("#E60000")
+                  HoverFill: =ColorValue("#C40000")
+                  PressedFill: =ColorValue("#A30000")
+                  Color: =ColorValue("#FFFFFF")
+                  BorderThickness: =0
+                  DisplayMode: =If(varSending || CountRows(colBase) = 0, DisplayMode.Disabled, DisplayMode.Edit)
+                  DisabledFill: =ColorValue("#F2A5A5")
+                  DisabledColor: =ColorValue("#FFFFFF")
+                  DisabledBorderColor: =Color.Transparent
+            - lblRpEmail:
+                Control: Label
+                Properties:
+                  Text: ="Results will be sent to " & User().Email
+                  X: =0
+                  Y: =492
+                  Width: =900
+                  Height: =22
+                  Size: =9
+                  Color: =ColorValue("#6B6B6B")
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Normal
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  PaddingBottom: =0
+                  VerticalAlign: =VerticalAlign.Middle
+                  Align: =Align.Center
+      - btnBackP:
+          Control: Classic/Button
+          Properties:
+            X: =45
+            Y: =912
+            Width: =220
+            Height: =52
+            Text: ="←   Back"
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Size: =15
+            FocusedBorderThickness: =0
+            OnSelect: =Back(ScreenTransition.Fade)
+            RadiusTopLeft: =6
+            RadiusTopRight: =6
+            RadiusBottomLeft: =6
+            RadiusBottomRight: =6
+            Fill: =ColorValue("#FFFFFF")
+            HoverFill: =ColorValue("#FFF3F0")
+            PressedFill: =ColorValue("#FFE3DC")
+            Color: =ColorValue("#E60000")
+            HoverColor: =ColorValue("#E60000")
+            BorderColor: =ColorValue("#E60000")
+            HoverBorderColor: =ColorValue("#E60000")
+            BorderThickness: =2
+      - btnNewCheckP:
+          Control: Classic/Button
+          Properties:
+            X: =1271
+            Y: =912
+            Width: =220
+            Height: =52
+            Text: ="⟳   New Check"
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Size: =15
+            FocusedBorderThickness: =0
+            OnSelect: =Clear(colResults); Clear(colBase); Set(varShowMsg, false); Navigate(scrMain, ScreenTransition.Fade)
+            RadiusTopLeft: =6
+            RadiusTopRight: =6
+            RadiusBottomLeft: =6
+            RadiusBottomRight: =6
+            Fill: =ColorValue("#E60000")
+            HoverFill: =ColorValue("#C40000")
+            PressedFill: =ColorValue("#A30000")
+            Color: =ColorValue("#FFFFFF")
+            BorderThickness: =0
+      - lblFooterBrandP:
+          Control: Label
+          Properties:
+            Text: ="Vodafone"
+            X: =33
+            Y: =988
+            Width: =90
+            Height: =24
+            Size: =11
+            Color: =ColorValue("#E60000")
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            VerticalAlign: =VerticalAlign.Middle
+      - rctFootDivP:
+          Control: Rectangle
+          Properties:
+            X: =127
+            Y: =991
+            Width: =1
+            Height: =16
+            Fill: =ColorValue("#9A9A9A")
+      - lblFooterTextP:
+          Control: Label
+          Properties:
+            Text: ="Powering a more connected Egypt"
+            X: =137
+            Y: =988
+            Width: =300
+            Height: =24
+            Size: =8
+            Color: =ColorValue("#3A3A3A")
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Normal
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            VerticalAlign: =VerticalAlign.Middle
+      - lblFooterSloganP:
+          Control: Label
+          Properties:
+            Text: ="For a brighter tomorrow"
+            X: =1300
+            Y: =982
+            Width: =200
+            Height: =28
+            Size: =11
+            Color: =ColorValue("#E60000")
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Normal
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PaddingBottom: =0
+            VerticalAlign: =VerticalAlign.Middle
+            Italic: =true
+      - conMsgOverlay:
+          Control: GroupContainer
+          Variant: ManualLayout
+          Properties:
+            X: =0
+            Y: =0
+            Width: =Parent.Width
+            Height: =Parent.Height
+            Fill: =RGBA(0,0,0,0.45)
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            BorderColor: =Color.Transparent
+            BorderThickness: =0
+            DropShadow: =DropShadow.None
+            Visible: =varShowMsg
+          Children:
+            - conMsgCard:
+                Control: GroupContainer
+                Variant: ManualLayout
+                Properties:
+                  X: =488
+                  Y: =352
+                  Width: =560
+                  Height: =320
+                  Fill: =ColorValue("#FFFFFF")
+                  RadiusTopLeft: =12
+                  RadiusTopRight: =12
+                  RadiusBottomLeft: =12
+                  RadiusBottomRight: =12
+                  BorderColor: =ColorValue("#E3E3E3")
+                  BorderThickness: =1
+                  DropShadow: =DropShadow.Light
+                Children:
+                  - btnMsgIcoBg:
+                      Control: Classic/Button
+                      Properties:
+                        X: =240
+                        Y: =36
+                        Width: =80
+                        Height: =80
+                        Text: =""
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Size: =10
+                        FocusedBorderThickness: =0
+                        OnSelect: =false
+                        RadiusTopLeft: =40
+                        RadiusTopRight: =40
+                        RadiusBottomLeft: =40
+                        RadiusBottomRight: =40
+                        Fill: =ColorValue("#3DBE5A")
+                        HoverFill: =ColorValue("#3DBE5A")
+                        PressedFill: =ColorValue("#3DBE5A")
+                        Color: =ColorValue("#FFFFFF")
+                        BorderThickness: =0
+                        DisplayMode: =DisplayMode.View
+                  - icoMsgCheck:
+                      Control: Classic/Icon
+                      Properties:
+                        Icon: =Icon.Check
+                        X: =258
+                        Y: =58
+                        Width: =44
+                        Height: =36
+                        Color: =ColorValue("#FFFFFF")
+                  - lblMsgHead:
+                      Control: Label
+                      Properties:
+                        Text: ="Export requested"
+                        X: =0
+                        Y: =132
+                        Width: =560
+                        Height: =34
+                        Size: =18
+                        Color: =ColorValue("#1E1E1E")
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PaddingBottom: =0
+                        VerticalAlign: =VerticalAlign.Middle
+                        Align: =Align.Center
+                  - lblMsgBody:
+                      Control: Label
+                      Properties:
+                        Text: ="Results will be sent to your email shortly."
+                        X: =30
+                        Y: =170
+                        Width: =500
+                        Height: =26
+                        Size: =12
+                        Color: =ColorValue("#3A3A3A")
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Normal
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PaddingBottom: =0
+                        VerticalAlign: =VerticalAlign.Middle
+                        Align: =Align.Center
+                  - btnMsgOk:
+                      Control: Classic/Button
+                      Properties:
+                        X: =190
+                        Y: =226
+                        Width: =180
+                        Height: =50
+                        Text: ="OK"
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Size: =14
+                        FocusedBorderThickness: =0
+                        OnSelect: =Set(varShowMsg, false)
+                        RadiusTopLeft: =6
+                        RadiusTopRight: =6
+                        RadiusBottomLeft: =6
+                        RadiusBottomRight: =6
+                        Fill: =ColorValue("#E60000")
+                        HoverFill: =ColorValue("#C40000")
+                        PressedFill: =ColorValue("#A30000")
+                        Color: =ColorValue("#FFFFFF")
+                        BorderThickness: =0
